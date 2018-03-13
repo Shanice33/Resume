@@ -47,7 +47,7 @@
                 </li>
                 <li>
                     <dt><i class="icon-bookmark"></i>Skill. 技能清单</dt>
-                        <h3>前端</h3>
+                        <!--<h3>前端</h3>-->
                         <ul class="exp">
                             <li>
                                 <div class="circle"></div>
@@ -62,24 +62,26 @@
                                 <p>了解Vue.js的使用；</p>
                             </li>
                             <li>
-                            <div class="circle"></div>
-                            <h4>其他</h4>
-                            <p>了解跨域、性能优化等方面的一些知识</p>
-                            <p>了解HTTP协议、ES6、DOM等一些知识</p>
-                        </li>
-                        </ul>
-                        <h3>后端</h3>
-                        <ul class="exp">
-                            <li>
-                                <div class="circle"></div>
-                                <h4>Node.js</h4>
-                                <p>了解 Node.js；</p>
-                            </li>
-                            <li>
                                 <div class="circle"></div>
                                 <h4>其他</h4>
+                                <p>了解跨域、性能优化等方面的一些知识；</p>
+                                <p>了解HTTP协议、ES6、DOM等；</p>
+                                <p>了解 Node.js,python；</p>
                                 <p>了解GIT版本管理工具，使用GitHub进行代码管理；</p>
                             </li>
+                        <!--</ul>-->
+                        <!--<h3>后端</h3>-->
+                        <!--<ul class="exp">-->
+                            <!--<li>-->
+                                <!--<div class="circle"></div>-->
+                                <!--<h4>Node.js</h4>-->
+                                <!--<p>了解 Node.js；</p>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                                <!--<div class="circle"></div>-->
+                                <!--<h4>其他</h4>-->
+                                <!--<p>了解GIT版本管理工具，使用GitHub进行代码管理；</p>-->
+                            <!--</li>-->
                         </ul>
                 </li>
                 <li>
@@ -108,7 +110,7 @@
                             <div class="circle"></div>
                             <h4>
                                 <span>购物网站界面</span>
-                                <a href="https://github.com/Shanice33/shopping.git" target="_blank"><i class="icon-link"></i>源代码</a>
+                                <!--<a href="https://github.com/Shanice33/shopping.git" target="_blank"><i class="icon-link"></i>源代码</a>-->
                             </h4>
                             <h5>项目描述</h5>
                             <p>面向服装、首饰和玩具等商品设计的在线购物网站，主要使用jQuery及其插件实现了网站首页和产品详细页，并添加了相关内容和功能。</p>
@@ -120,21 +122,26 @@
                         <li>
                             <div class="circle"></div>
                             <h4>
-                                <span>仿Flash图片轮换播放器</span>
-                                <a href="https://github.com/Shanice33/flash.git" target="_blank"><i class="icon-link"></i>源代码</a>
+                                <span>七夕节浪漫动画</span>
+                                <!--<a href="https://github.com/Shanice33/flash.git" target="_blank"><i class="icon-link"></i>源代码</a>-->
                             </h4>
                             <h5>项目描述</h5>
-                            <p>实现通过点击大图的左右按钮轮换播放图片。</p>
+                            <p>采用HTML5+JavaScript+CSS3的混合使用实现男孩买花去约见女孩的3个主题场景动画效果。</p>
                             <h5>主要工作</h5>
-                            <p>1.鼠标移入大图，左右按钮显示；</p>
-                            <p>2.当前显示的大图对应底下小图全显，其他小图半透明；</p>
-                            <p>3.实现每张大图切换效果，小图跟随大图切换滚动；</p>
+                            <p>1.场景介绍：男孩开始走动时，背景音乐响起，当走到页面一半时开始切换到下一个场景页面并切换背景音乐，男孩继续走动到第二个场景中的商店门口时，商店开门，男孩进去买花出来，页面开始切换到第三个场景并切换背景音乐，男孩拿着花去桥上约会心仪的姑娘，然后一起转身赏月看星星，此时玫瑰花飘过庆祝七夕快乐；</p>
+                            <p>2.主要技术：HTML5的audio元素播放与切换音乐；CSS3中的animation实现帧动画，并且可以控制状态，transform实现布局上的一些改动；CSS Sprite解决图片加载与资源占用的问题，减少HTTP请求，优化性能；jQuery中的$.Deffered()对象实现异步编程；JavaScript动画实现，结合百分比布局的处理解决了自适应分辨率的问题；</p>
+                            <p>3.项目剖析：
+                                <p>（1）整个项目以小男孩走路为前提，在三个主题页面中切换，在每个主题页面中会有不一样的呈现效果，通过页面和小男孩的速率变化，可以让用户产生视觉差，感觉人物在不断前进；</p>
+                                <p>（2）布局上，使用3个块级元素分别代表了一个主题页面的容器节点，然后设置一个父容器是3个块级元素的宽，通过float对块级元素处理就形成了一个横向的3个无缝拼接的页面；再通过设置其父容器的left值实现页面的无缝切换；</p>
+                                <p>（3）通过CSS布局实现主题页面上的动画，本项目使用百分比解决了自适应布局，通过javascript动态计算绝对的尺寸使其页面尺寸更精确；</p>
+                                <p>（4）面向接口编程：将小男孩的一系列动作行为和页面滚动操作进行了封装，主代码中通过异步编程思想实现了一系列动作的连贯性；</p>
+                            </p>
                         </li>
                         <li>
                             <div class="circle"></div>
                             <h4>
                                 <span>网页版2048游戏</span>
-                                <a href="https://github.com/Shanice33/2048.git" target="_blank"><i class="icon-link"></i>源代码</a>
+                                <!--<a href="https://github.com/Shanice33/2048.git" target="_blank"><i class="icon-link"></i>源代码</a>-->
                             </h4>
                             <h5>项目描述</h5>
                             <p>实现一个2048的网页游戏：通过移动方向键，让相同数字相加合并成一个数字，若结果为2048则游戏成功。</p>
